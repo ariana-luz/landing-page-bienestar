@@ -1,0 +1,123 @@
+body, h1, h2, p, ul, li, a, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(to right, #38b6ff, #ff914d);
+    color: white;
+}
+
+section {
+    padding: 20px;
+}
+
+/* Estilo para el contenedor de la galería */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Estilo para las imágenes */
+.image-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto hover en las imágenes */
+.image-grid img:hover {
+    transform: scale(1.05); /* Zoom suave */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Más sombra al pasar el cursor */
+}
+
+/* Contenedor del formulario */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9; /* Fondo claro */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    font-family: 'Arial', sans-serif;
+}
+
+/* Etiquetas de los campos */
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+    font-size: 16px;
+}
+
+/* Campos de entrada */
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Estilo para el campo de texto en foco */
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form textarea:focus {
+    border-color: #57c4d5; /* Color del cliente */
+    box-shadow: 0 0 5px rgba(87, 196, 213, 0.5); /* Sombra en foco */
+    outline: none;
+}
+
+/* Botón de envío */
+form button[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background-color: #57c4d5; /* Color principal del cliente */
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+form button[type="submit"]:hover {
+    background-color: #45a3b3; /* Color más oscuro al pasar el cursor */
+    transform: scale(1.05); /* Efecto de agrandar suavemente */
+}
+
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
