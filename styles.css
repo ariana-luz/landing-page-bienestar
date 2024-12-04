@@ -5,6 +5,10 @@ body, h1, h2, p, ul, li, a, button {
     font-family: 'Arial', sans-serif;
 }
 
+h2 {
+    font-size: 120px;
+}
+
 .home {
     height: 100vh;
     background-image: linear-gradient(to top, rgba(185, 195, 243, 0.3) 0%, rgba(231, 209, 225, 0.3) 100%), url(img/example1.jpg);
@@ -46,6 +50,34 @@ header {
 
 section {
     padding: 20px;
+    margin: 60px 100px;
+}
+
+#about {
+    display: flex;
+    flex-direction: row;
+    p {
+        margin: 60px 0px 70px 100px;
+    }
+}
+
+#services {
+    ul {
+        display: flex;
+        list-style: none;
+        font-size: 30px;
+    }
+    
+    li {
+        text-align: center;
+    }
+
+    img {
+        width: 300px;
+        border-radius: 10%;
+        text-align: center;
+        padding: 20px;
+    }
 }
 
 /* Estilo para el contenedor de la galería */
@@ -96,7 +128,7 @@ form input[type="text"],
 form input[type="email"],
 form textarea {
     width: 100%;
-    padding: 15px;
+    padding: 15px 0;
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 8px;
