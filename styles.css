@@ -5,12 +5,18 @@ body, h1, h2, p, ul, li, a, button {
     font-family: 'Arial', sans-serif;
 }
 
+.home {
+    height: 100vh;
+    background-image: linear-gradient(to top, rgba(185, 195, 243, 0.3) 0%, rgba(231, 209, 225, 0.3) 100%), url(img/example1.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #f8f9fa;
 }
 
 .logo {
@@ -23,22 +29,19 @@ header {
     gap: 15px;
     a {
         text-decoration: none;
-        color: #333;
+        color: #fff;
     }
 }
 
 .hero {
-    height: 60vh;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     padding: 50px;
+    color: #fff;
     /* background: linear-gradient(to right, #38b6ff, #ff914d); */
-    background-image: linear-gradient(to top, rgb(161, 140, 209, 0.4) 0%, rgb(251, 194, 235, 0.4) 100%), url(img/example1.jpg);
-    background-position: center center;
-    background-size: cover;
-    color: white;
 }
 
 section {
@@ -131,6 +134,7 @@ form button[type="submit"]:hover {
 
 
 footer {
+    height: 5vh;
     text-align: center;
     background-color: #333;
     color: white;
