@@ -27,3 +27,15 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+
+// ¿Cómo funciona el método form.reset()?
+// form.reset():
+
+// Este método pertenece al objeto de formulario en JavaScript.
+// Al llamarlo, todos los campos del formulario (inputs, textarea, etc.) vuelven a sus valores iniciales, es decir, se limpian si no tienen valores predeterminados.
+// Orden en el script:
+
+// Primero se detiene el comportamiento predeterminado con e.preventDefault().
+// Luego se muestra el alert.
+// Finalmente, se ejecuta form.reset() para vaciar los campos.
+

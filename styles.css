@@ -13,16 +13,31 @@ header {
     background-color: #f8f9fa;
 }
 
+.logo {
+    width: 120px;
+}
+
 .nav-links {
     list-style: none;
     display: flex;
     gap: 15px;
+    a {
+        text-decoration: none;
+        color: #333;
+    }
 }
 
 .hero {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
     padding: 50px;
-    background: linear-gradient(to right, #38b6ff, #ff914d);
+    /* background: linear-gradient(to right, #38b6ff, #ff914d); */
+    background-image: linear-gradient(to top, rgb(161, 140, 209, 0.4) 0%, rgb(251, 194, 235, 0.4) 100%), url(img/example1.jpg);
+    background-position: center center;
+    background-size: cover;
     color: white;
 }
 
