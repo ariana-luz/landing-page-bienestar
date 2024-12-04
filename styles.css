@@ -5,11 +5,16 @@ body, h1, h2, p, ul, li, a, button {
     font-family: "Work Sans", sans-serif;
 }
 
+.container {
+    width: 100%;
+}
+
 h2 {
     font-size: 100px;
 }
 
 .home {
+    width: 100%;
     height: 100vh;
     background-image: linear-gradient(to top, rgba(185, 195, 243, 0.3) 0%, rgba(231, 209, 225, 0.3) 100%), url(img/example1.jpg);
     background-position: center center;
@@ -27,6 +32,10 @@ header {
     width: 120px;
 }
 
+.burger {
+    display: none;
+}
+
 .nav-links {
     list-style: none;
     display: flex;
@@ -38,23 +47,25 @@ header {
 }
 
 .hero {
-    height: 70vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    margin: 0;
     color: #fff;
     /* background: linear-gradient(to right, #38b6ff, #ff914d); */
 }
 
 section {
-    padding: 20px;
-    margin: 60px 100px;
+    padding: 15px;
+    margin: 60px;
 }
 
 #about {
     display: flex;
     flex-direction: row;
+    margin: 60px;
     p {
         margin: 60px 0px 70px 100px;
     }
@@ -62,20 +73,12 @@ section {
 
 #services {
     ul {
-        display: flex;
         list-style: none;
-        font-size: 30px;
-    }
-    
-    li {
-        text-align: center;
-    }
-
-    img {
-        width: 300px;
-        border-radius: 10%;
-        text-align: center;
-        padding: 20px;
+        font-size: 20px;
+        p {
+            padding: 20px;
+            text-align: center;
+        }
     }
 }
 
@@ -171,3 +174,87 @@ footer {
     color: white;
     padding: 10px;
 }
+
+/*cuando el body tenga un ancho inferior a 920px*/
+
+@media(max-width: 920px) {
+    .hero {
+        height: 90vh;
+    }
+
+    #about {
+        display: block;
+        p {
+            margin: 60px 0;
+        }
+    }
+
+    h2 {
+        font-size: 70px;
+    }
+
+    section {
+        margin: 40px;
+    }
+}
+
+@media(max-width: 740px) {
+    .hero {
+        height: 70vh;
+    }
+
+	h2 {
+        font-size: 50px;
+    }
+
+    #about {
+        margin: 50px 50px 0 50px;
+        p {
+            margin: 40px 0;
+        }
+    }
+
+    section {
+        margin: 0 50px;
+    }
+
+    #services {
+        ul {
+            width: 100%;
+            text-align: center;
+            padding: 0;
+            p {
+                padding: 10px 0;
+            }
+        }
+    }
+
+    .image-grid {
+        grid-template-columns: 1fr;
+    }
+   
+    .image-grid img {
+        text-align: center;
+        padding: 0;
+    }
+}
+
+@media(max-width: 480px) {
+    .hero {
+        height: 80vh;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    #about {
+        display: block;
+    }
+
+}
+
