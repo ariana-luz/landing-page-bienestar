@@ -2,11 +2,11 @@ body, h1, h2, p, ul, li, a, button {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+    font-family: "Work Sans", sans-serif;
 }
 
 h2 {
-    font-size: 120px;
+    font-size: 100px;
 }
 
 .home {
@@ -43,7 +43,6 @@ header {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    padding: 50px;
     color: #fff;
     /* background: linear-gradient(to right, #38b6ff, #ff914d); */
 }
@@ -111,7 +110,7 @@ form {
     background-color: #f9f9f9; /* Fondo claro */
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra */
-    font-family: 'Arial', sans-serif;
+    font-family: "Work Sans", sans-serif;
 }
 
 /* Etiquetas de los campos */
